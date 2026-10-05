@@ -1,15 +1,15 @@
-/* Sustituí el valor vacío por tu identificador de medición GA4,
-   por ejemplo G-ABC1234567.
+/*
+ * Configuración pública.
+ * No colocar contraseñas ni claves privadas.
+ *
+ * GA4 se carga sólo después de una elección explícita del visitante.
+ *
+ * Desactivar medición mejorada completa y detección automática de
+ * cambios de historial en el flujo de datos de Google Analytics.
+ */
 
-   No coloqués contraseñas, claves privadas ni credenciales
-   en estos archivos públicos.
-
-   Analytics se carga únicamente cuando el visitante lo acepta.
-
-   Mantené desactivada la medición mejorada en GA4:
-   no registrar temas, búsquedas ni videos.
-*/
-
-window.EN_CONFIANZA_CONFIG = Object.freeze({
-  ga4Id: ''
+window.EC_CONFIG = Object.freeze({
+  ga4Id: '',
+  siteUrl: 'https://alvaroporras2002-coder.github.io/enconfianza/',
+  quickExitUrl: 'https://www.google.com/'
 });
